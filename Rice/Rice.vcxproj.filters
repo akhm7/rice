@@ -24,6 +24,9 @@
     <None Include="decompressed.bin">
       <Filter>Файлы ресурсов</Filter>
     </None>
+    <None Include="compressed.rice">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

@@ -67,13 +67,16 @@ int main(int argc, char* argv[]) {
         // Выводим 100 случайных чисел
         int c = 1 + rand() % 10000;
         for (int count = 0; count < c; ++count)
-            in << PRNG() << " ";
+        {
+            unsigned value = PRNG();
+            in.write((char*)&value, sizeof(value));
+        }
         in.close();
         rice* temp = new rice("test.bin");
         test1 = fileSize("test.bin");
         test2 = fileSize("compressed.rice");
-        test3 = fileSize("decompressed.bin");
-        if (!(equalFile("test.bin", "decompressed.bin") && test1 == test3)) {
+        test3 = fileSize("1/test.bin");
+        if (!(equalFile("test.bin", "1/test.bin") && test1 == test3)) {
             std::cout << "error equal file" << std::endl;
         }
         else

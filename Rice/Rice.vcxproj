@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="compressed.bin" />
+    <None Include="compressed.rice" />
     <None Include="data.bin" />
     <None Include="decompressed.bin" />
   </ItemGroup>
