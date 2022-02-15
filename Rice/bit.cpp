@@ -1,11 +1,13 @@
-#include "bit.h"
+﻿#include "bit.h"
 
 void bitStream::writeBit(int x)
 {
+	// индекс блока в памяти для значения (сдвиг на 3 тк uint8_t)
 	uint32_t index = this->bitPos >> 3;
 
 	if (index < this->numBytes)
 	{
+		// битовая магия 🐱‍👤
 		uint32_t bit = 7 - (this->bitPos & 7);
 		uint32_t mask = 0xff ^ (1 << bit);
 		uint32_t set = (x & 1) << bit;
