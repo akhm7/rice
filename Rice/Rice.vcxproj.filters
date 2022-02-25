@@ -40,16 +40,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Задача.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="rice.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="bit.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.MD" />
   </ItemGroup>
 </Project>

@@ -150,7 +150,7 @@
     <ClCompile Include="rice.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Задача.txt" />
+    <Text Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bit.h" />
