@@ -41,7 +41,7 @@ bitStream::bitStream(uint8_t* buffer, uint32_t bytes) :
 	numBytes(bytes)
 {}
 
-bitStream::bitStream(uint8_t * bytePoint, uint32_t bitPos, uint32_t numBytes) :
+bitStream::bitStream(uint8_t* bytePoint, uint32_t bitPos, uint32_t numBytes) :
 	bytePoint(bytePoint),
 	bitPos(bitPos),
 	numBytes(numBytes)

@@ -15,20 +15,20 @@ private:
 
 	int _inputSize = 0;
 
-	bitStream *stream;
+	bitStream* stream;
 
 	uint8_t* _originalData;
 	uint8_t* _compressedData;
 	uint8_t* _decompressedData;
 
-	
+
 	const char* _outputEncodeFile = "compressed.bin";
 	const char* _outputDecodeFile = "decompressed.bin";
 
 
 	int numBits(uint32_t x)
 	{
-		/* 0x80000000 – вспомогательное значение, с помощью которой выделяется один бит из числа 
+		/* 0x80000000 – вспомогательное значение, с помощью которой выделяется один бит из числа
 		за счет того, что все биты, кроме самого левого, после применения операции & будут равны 0,
 		а самый левый бит останется без изменений.
 		Знаем макс битность значения (32), обратным циклом вычисляем количество битов битовым сдвигом

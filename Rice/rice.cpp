@@ -99,7 +99,7 @@ int rice::compress(uint8_t* input, uint8_t* output)
 		hgm[i % _history] = numBits(x);
 	}
 
-	/* 
+	/*
 	Если честно ниже момент плохо помню, но помоему он использовался для этого случая:
 
 	quote: In general, a lower value of k will make smaller numbers cheaper and bigger numbers more expensive to store,
